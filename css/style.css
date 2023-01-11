@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteyner{
+    max-width: 1500px;
+    margin: 0 auto;
+    border: 2px solid rgb(196, 27, 27);
+}
+body{
+    font-family: 'Abel', sans-serif;
+}
+header{
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 60px;
+    align-items: center;
+    background-color: #ffffff;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.header-top button{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #1D2130;
+    color: #ffffff;
+}
+.logo{
+    margin-left: 30px;
+}
+nav ul{
+    display: flex;
+    min-width: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    border-bottom: 2px solid red;
+
+}
+.header-info{
+    background-image: url(../img/BG\ Image.png);
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+.header-info h1{
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 130%;
+/* or 57px */
+
+padding-top: 235px;
+padding-left:  100px; ;
+max-width: 343px;
+
+/* color-light-xl */
+
+color: #ffffff;
+}
+.header-info p{
+    padding-top: 20px;
+    max-width: 500px;
+    color: rgb(255, 255, 255);
+    padding-left: 100px;
+
+}
+.header-info pl{
+    color: #FAFAFA;
+    padding-left: 100px;
+}
+.header-info pl1{
+    padding-left: 700px;
+    color: #FAFAFA;
+}
+.mini-p
+{
+    padding-bottom: 20px;
+}
+.header-info button{
+    padding: 15px 45px;
+    border-radius: 100px;
+    border: none;
+    margin-top: 45px;
+    margin-left: 100px;
+}
+.header-info videob{
+    grid-template-columns: repeat(2);
+}
+.header-info p{
+    justify-content: center;
+    display: flex;
+}
+.about-content{
+    display: block;
+    padding-top: 68px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+    background-color: #CFCFCF;
+    
+}
+.about-content1{
+    display: flex;
+    justify-content: space-around;
+}
+.logosizm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 486px
+}
+.about-text{
+    width: 50%;
+    font-family: 'Georgia';
+}
+.about-img img {
+    max-width: 200px;
+    margin-left: 30;
+}
+.about-content button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #70C174;
+    color: #CFCFCF;
+    border: #ffffff
+}
+.about-content h2{
+    margin: 0;
+}
+.slayder{
+    display: grid;
+    grid-template-columns: repeat(2,270px);
+    justify-content: space-around;
+    background-color: #EFF7F2;
+}
+.information{
+    background-color: #EFF7F2;
+}
+.slayder-element{
+    background-color: #EFF7F2;
+    text-align: center;
+    justify-content: space-around;
+}
+.slayder-element button{
+    padding: 10px 20px;
+    border:  2px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    margin: 35px;
+    background-color: #FAFAFA;
+}
+.slayder-element h3{
+    margin-top: 25px;
+}
+
+.conteyner h2{
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.but{
+    margin: 0 auto;
+    display: block;
+    margin-top: 60px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: #F1CDB3;
+    margin-bottom: 35px;
+}
+.conteyner h2{
+    text-align: center;
+    margin-top: 80px;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(3,270px);
+    justify-content: space-around;
+    justify-items: center;
+    margin: 35px;
+    margin-bottom: 100px;
+}
+.projekt-slide{
+    display: flex ;
+    justify-content: space-around;
+}
+@media screen and (max-width:670px) {
+    nav ul {
+        min-width: 410px;
+    }
+    .slayder{
+        grid-template-columns: repeat(2,270px);
+        justify-content: center;
+    }
+    .Woody {
+        grid-column: 1/3;
+    }
+    .menu{
+        grid-template-columns: repeat(2,270px);
+    }
+    .credit{
+        flex-direction: column;
+    }
+    .aprava{
+        flex-direction: column;
+    }
+    .info1{
+        text-align: center;
+    }
+    .info2{
+        text-align: center;
+    }
+    .doggi{
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+    }
+}
+@media screen and (max-width:570px) {
+    nav ul {
+        min-width: 265px;
+    }
+    nav ul li a {
+        font-size: 12px;
+    }
+    .about-text{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:430px)
+{
+    nav ul{
+        flex-direction:column;
+        align-items: center;
+    }
+    .about-text{
+        font-size: 17px;
+        width: 90%;
+    }
+    .slayder{
+        grid-template-columns: repeat(1,270px);
+    }
+    .Woody{
+        grid-column: 1;
+    }
+    .dog img{
+        width: 90%;
+    }
+    .doggi{
+        width:auto ;
+    }
+}
+@media screen and (max-width:331px){
+    nav ul, .header-top {
+        flex-direction: column;
+
+    }
+    nav il, .header-info{
+        background-position: bottom;
+        background-size: contain;
+    }
+    nav ul, .h1{
+        padding-top: 55px
+    }
+    .about-text{
+        font-size: 15px;
+    }
+    .menu{
+        grid-template-columns: repeat(1,270px);
+    }
+    
+}
+
+@media screen and (max-width:240px) {
+    nav ul, .header-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-text{
+        font-size: 13px;
+    }
+    .menu{
+        grid-template-columns: repeat(1,240px);
+    }
+    .slayder-element img{
+        width: 50%;
+    }
+    .slayder{
+        grid-template-columns: repeat(1,170px);
+    }
+    .doggi img{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .info1 h3{
+        font-size: 70%;
+    }
+    .info1 img{
+        width: 10%;
+    }
+    .info1{
+     margin-top: 0px;
+     margin-bottom: 0px;   
+    }
+    .info1 h2{
+        margin-top: 10px;
+    }
+    .info2 h3{
+        font-size: 70%;
+    }
+    .info2 img{
+        width: 10%;
+    }
+    .info2{
+     margin-top: 0px;
+     margin-bottom: 0px;   
+    }
+    .info2 h2{
+        margin-top: 10px;
+    }
+}
